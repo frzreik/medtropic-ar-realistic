@@ -1,0 +1,12 @@
+{
+  "results": [
+    "index.html: HTML validation passed",
+    "qr.html: HTML validation passed",
+    "404.html: HTML validation passed",
+    "CSS syntax parsed",
+    "14 referenced local HTML/CSS/manifest assets exist and return HTTP 200",
+    "enchi_live_edge_table.glb: embedded textures/buffers; 20960 triangles",
+    "fairafric_booth.glb: embedded textures/buffers; 11196 triangles",
+    "medtropic_showroom.glb: embedded textures/buffers; 32156 triangles"
+  ]
+}

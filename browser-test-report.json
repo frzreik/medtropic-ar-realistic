@@ -1,0 +1,101 @@
+{
+  "base": "http://127.0.0.1:8765/medtropic-ar-realistic/",
+  "results": [
+    {
+      "name": "Camera requested on entry, rear preferred, microphone not requested",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Camera playback and 3D scene load",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Mobile layout 390×844",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Mobile layout 360×640",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Mobile layout 844×390",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Help dialog and keyboard-accessible controls",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "enchi logo opens exact matching website",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fairafric logo opens exact matching website",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Rotation gesture does not trigger website navigation",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "ENCHI actual 3D mesh tap opens matching website",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "FAIRAFRIC actual 3D mesh tap opens matching website",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Fixed scale, floor AR, WebXR/Scene Viewer/Quick Look configured",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "AR launch keeps user gesture and releases preview camera (simulated handoff)",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Placement and tracking feedback (simulated AR events)",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Camera resumes after simulated AR exit",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Camera denial leaves usable 3D and retry button",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Camera retry succeeds",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Missing model error and successful retry",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "No unexpected browser errors or failed local requests",
+      "status": "PASS",
+      "details": ""
+    }
+  ],
+  "hardwareAR": "Not tested: physical camera, surface detection, tracking and native AR require real devices"
+}
