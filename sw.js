@@ -1,7 +1,7 @@
 'use strict';
 // Deliberately network-first: model revisions must not remain stuck in the old cache.
-const CACHE='medtropic-ar-realistic-20260923';
-const CORE=['./','./index.html','./styles.css?v=20260923','./app.js?v=20260923','./model-viewer.min.js','./medtropic_showroom.glb','./medtropic-logo.jpg','./fairafric-logo.png','./icon-192.png','./icon-512.png','./hanken-grotesk-800.woff2','./manifest.webmanifest'];
+const CACHE='medtropic-ar-realistic-20260924-blender';
+const CORE=['./','./index.html','./styles.css?v=20260924-blender','./app.js?v=20260924-blender','./model-viewer.min.js','./medtropic_showroom.glb','./medtropic-white.svg','./fairafric-white.svg','./enchi-white.svg','./icon-192.png','./icon-512.png','./hanken-grotesk-800.woff2','./manifest.webmanifest'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
   const keys=await caches.keys();await Promise.all(keys.filter(k=>k.startsWith('medtropic-ar-realistic-')&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim();

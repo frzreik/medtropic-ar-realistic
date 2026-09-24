@@ -1,0 +1,12 @@
+{
+  "environment": "Desktop Chrome emulating Samsung Internet user agent and touch. No physical Samsung hardware.",
+  "results": [
+    "Samsung chooses Scene Viewer before WebXR",
+    "Selected model survives browser/deep-link handoff",
+    "Chrome fallback retains product selection",
+    "Actual model-viewer generated Android intent points to selected GLB",
+    "AR launch preserves user gesture and releases preview camera",
+    "No browser exceptions"
+  ],
+  "intent": "intent://arvr.google.com/scene-viewer/1.2?mode=ar_preferred&disable_occlusion=true&file=http%3A%2F%2F127.0.0.1%3A8765%2Fmedtropic-ar-realistic%2Ffairafric_bar_04.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=http%3A%2F%2F127.0.0.1%3A8765%2Fmedtropic-ar-realistic%2F%3Fbrand%3Dfairafric%26product%3D4%23model-viewer-no-ar-fallback;end;"
+}

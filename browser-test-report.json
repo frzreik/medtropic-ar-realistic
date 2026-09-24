@@ -47,17 +47,17 @@
       "details": ""
     },
     {
-      "name": "ENCHI actual 3D mesh tap opens matching website",
+      "name": "ENCHI actual 3D mesh tap opens its collection",
       "status": "PASS",
       "details": ""
     },
     {
-      "name": "FAIRAFRIC actual 3D mesh tap opens matching website",
+      "name": "FAIRAFRIC actual 3D mesh tap opens its collection",
       "status": "PASS",
       "details": ""
     },
     {
-      "name": "Fixed scale, floor AR, WebXR/Scene Viewer/Quick Look configured",
+      "name": "Resizable scale, floor AR, WebXR/Scene Viewer/Quick Look configured",
       "status": "PASS",
       "details": ""
     },

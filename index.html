@@ -8,42 +8,53 @@
   <title>MedTropic · In your space</title>
   <link rel="icon" href="icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=20260923">
-  <script src="app.js?v=20260923" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260924-blender">
+  <script src="app.js?v=20260924-blender" defer></script>
   <script type="module" src="model-viewer.min.js"></script>
 </head>
 <body>
   <video id="camera" autoplay muted playsinline aria-hidden="true"></video>
   <div class="vignette" aria-hidden="true"></div>
   <header class="topbar">
-    <a href="./" class="medtropic" aria-label="MedTropic home"><img src="medtropic-logo.jpg" alt="MedTropic"></a>
+    <a href="./" class="medtropic" aria-label="MedTropic home"><img src="medtropic-white.svg" alt="MedTropic"></a>
     <button id="help" type="button" class="small-button" aria-label="About this AR experience">?</button>
   </header>
   <main>
-    <div class="heading"><p class="eyebrow">TWO BRANDS. YOUR SPACE.</p><h1>A closer look.</h1><p>Tap a piece to discover its world.</p></div>
+    <nav id="brandBanners" class="brand-banners" aria-label="Brand websites">
+      <a class="brand-banner enchi" href="https://enchifurniture.com/" aria-label="Visit enchi website"><img src="enchi-white.svg" alt="enchi"></a>
+      <a class="brand-banner fairafric" href="https://www.fairafric.com/en/products/70-organic-dark-chocolate" aria-label="Visit fairafric website"><img src="fairafric-white.svg" alt="fairafric"></a>
+    </nav>
     <model-viewer id="showroom" src="medtropic_showroom.glb"
-      alt="An enchi live-edge wooden table on two black steel frames beside a stocked fairafric display without metal shelving. Tap either object or its logo to visit its website."
+      alt="An enchi wooden table beside a fairafric chocolate display. Tap a piece to explore its collection or its logo to visit the brand website."
       camera-controls touch-action="none" disable-pan
-      camera-orbit="-8deg 70deg auto" camera-target="-0.08m 0.72m 0m" field-of-view="32deg"
+      camera-orbit="0deg 68deg auto" camera-target="auto auto auto" field-of-view="32deg"
       min-camera-orbit="auto 30deg 60%" max-camera-orbit="auto 90deg 160%"
-      shadow-intensity="0.85" shadow-softness="0.95" exposure="1" environment-image="neutral"
-      ar ar-modes="webxr scene-viewer quick-look" ar-placement="floor" ar-scale="fixed" xr-environment
+      shadow-intensity="0.75" shadow-softness="0.9" exposure="1" environment-image="neutral"
+      ar ar-modes="webxr scene-viewer quick-look" ar-placement="floor" ar-scale="auto" xr-environment
       interaction-prompt="none" loading="eager">
-      <a slot="hotspot-enchi" class="brand-tag enchi" data-position="-0.54m 1.01m 0m" data-normal="0m 1m 0m" href="https://enchifurniture.com/" aria-label="Visit enchi website"><span>enchi</span><small>FINE WOOD FURNITURE ↗</small></a>
-      <a slot="hotspot-fairafric" class="brand-tag fairafric" data-position="1.50m 1.24m -0.13m" data-normal="0m 1m 0m" href="https://www.fairafric.com/en/products/70-organic-dark-chocolate" aria-label="Visit fairafric website"><img src="fairafric-logo.png" alt="fairafric"><small>MADE IN GHANA ↗</small></a>
+      <span class="brand-anchor" slot="hotspot-enchi" data-position="-1.05m 1.1m 0m" data-normal="0m 1m 0m" aria-hidden="true"></span>
+      <span class="brand-anchor" slot="hotspot-fairafric" data-position="1.62m 1.39m 0.06m" data-normal="0m 1m 0m" aria-hidden="true"></span>
       <span slot="ar-button"></span>
       <div class="loading" slot="progress-bar" id="loading"><span></span><p>Preparing your showroom…</p></div>
       <div class="ar-guide" id="arGuide" aria-live="polite"></div>
     </model-viewer>
+    <section id="collection" class="collection-direct" aria-label="Product collection" hidden>
+      <button id="backToShowroom" class="collection-back" type="button" aria-label="Back to two-brand showroom">←</button>
+      <span id="productPosition" class="product-position" aria-live="polite"></span>
+      <a id="productLink" class="product-link" href="#" target="_blank" rel="noopener" aria-label="View the selected official product">↗</a>
+      <span id="productName" class="sr-only" role="status">Product preview</span>
+      <span id="productDetail" class="sr-only"></span><span id="productScale" class="sr-only"></span>
+      <div class="scroll-cue" aria-hidden="true"><span>⌃</span><span>⌄</span></div>
+    </section>
     <div id="modelError" class="error-card" hidden><p>The 3D scene couldn’t load.</p><button type="button" id="reloadModel">Try again</button><div class="site-links"><a href="https://enchifurniture.com/">Visit enchi ↗</a><a href="https://www.fairafric.com/en/products/70-organic-dark-chocolate">Visit fairafric ↗</a></div></div>
   </main>
   <footer class="controls">
     <div class="status-row"><span id="statusDot" class="dot"></span><p id="cameraStatus" role="status">Opening your rear camera…</p></div>
     <p class="mode-note" id="modeNote">Preview · tap below for full-size floor placement</p>
     <div class="actions"><button id="cameraButton" type="button" class="secondary" hidden>Enable camera</button><button id="placeAR" type="button" class="primary" disabled>Loading 3D…</button><button id="resetView" type="button" class="secondary" aria-label="Reset the 3D view">↺</button></div>
-    <p class="hint" id="hint">Drag to look around · tap a logo to visit</p>
+    <p class="hint" id="hint">Tap either 3D piece to explore</p>
   </footer>
-  <dialog id="info"><button id="closeHelp" type="button" class="close" aria-label="Close information">×</button><p class="eyebrow">IN YOUR SPACE</p><h2>From a closer look<br>to the real world.</h2><p>The live camera preview starts as soon as you allow access. Tap either object or its logo to open the matching website.</p><p>Tap <strong>Place on floor · full size</strong> to detect a floor. Move your phone slowly, then place the scene. Leave space for a full dining table and display stand.</p><p>On iPhone, Quick Look opens for placement. Android uses WebXR or Scene Viewer. Website links remain in this page; native AR viewers have their own controls.</p><p class="fine-print">Photo-based reconstructions with estimated dimensions: table 2.60 × approximately 1.02 × 0.765 m; display approximately 1.00 × 0.86 × 1.06 m (enlarged display). Camera preview does not track a surface. Furniture does not automatically hide behind real objects.</p><a href="qr.html">Open the QR code ↗</a></dialog>
+  <dialog id="info"><button id="closeHelp" type="button" class="close" aria-label="Close information">×</button><p class="eyebrow">IN YOUR SPACE</p><h2>From a closer look<br>to the real world.</h2><p>Allow the live camera, then tap either 3D piece. Swipe up or down directly on the model to browse that brand's products. Drag sideways to rotate. The floating brand banners open their websites.</p><p>Tap <strong>Open AR · place on floor</strong> to place the selected product on a detected floor. On iPhone, Quick Look opens after this tap. Samsung Internet opens Scene Viewer when available; Chrome can use WebXR or Scene Viewer. Google Play Services for AR and an ARCore-supported phone are needed for tracked placement. Return to this page to choose another product.</p><p class="fine-print">The 5 m waterfall is a bespoke preview, not a listed product. Chocolate bars and ingredients are larger than life for viewing and touch the floor without a display base. These are artist-made 3D interpretations, not measured photogrammetry scans. The camera preview alone does not track a surface; native AR performs floor detection. Real-device placement varies with lighting and tracking.</p><a id="openChrome" hidden>Open in Chrome ↗</a><a href="qr.html">Open the QR code ↗</a></dialog>
   <noscript><p class="noscript">Enable JavaScript for the camera and AR. <a href="https://enchifurniture.com/">Visit enchi</a> · <a href="https://www.fairafric.com/en/products/70-organic-dark-chocolate">Visit fairafric</a></p></noscript>
 </body>
 </html>

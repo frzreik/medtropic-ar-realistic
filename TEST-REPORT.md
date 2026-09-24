@@ -1,39 +1,20 @@
-# MedTropic AR test report
+# MedTropic AR — Blender edition test report
 
-Date: 23 September 2026. Baseline: frzreik/medtropic-ar at 9d20e3d; delivered as a separate repository, medtropic-ar-realistic.
+Release: blender-20260924-1. Checked 24 September 2026.
 
-## Results
+- HTML, CSS and JavaScript validation passed. Local HTML/CSS/manifest references resolve under the GitHub Pages-style subpath.
+- All 20 GLBs pass the Khronos validator with zero errors and zero warnings. Textures and buffers are embedded. Every model was loaded and rendered in the browser and its floor origin checked. Models are under 8 MB each.
+- Browser checks passed for rear-camera preference, microphone exclusion, camera playback, permission denial and retry, model loading failure and recovery, exact brand links, 390×844 / 360×640 / 844×390 layouts, direct model taps, vertical wheel and touch-style swipes, AR handoff, and camera recovery after simulated AR exit.
+- Samsung Internet simulation passed: Scene Viewer preferred; actual generated Android intent points to the selected GLB; transient user activation preserved; camera released; Open in Chrome link preserves selected product. This was desktop Chrome with Samsung user-agent and touch emulation, not a physical Samsung phone.
+- New white transparent logo treatment visually reviewed. Table and stand are separated in the actual combined model. Every product was visually reviewed in a contact sheet.
+- Print and digital card PDFs rendered and visually checked. Two pages each; 85×55 mm trim, 3 mm bleed on print version. QR decoded from the card proof and standalone QR to https://frzreik.github.io/medtropic-ar-realistic/ .
+- Service-worker scope and offline showroom reload checked.
 
-- HTML validation: index, QR page and 404 page pass. Custom element and deliberate muted camera autoplay accommodated by the validator configuration.
-- CSS parses; app.js and sw.js pass Node syntax checks.
-- 14 local HTML/CSS/manifest references checked for existence and HTTP 200 under the GitHub Pages-style subpath.
-- Three GLBs pass the Khronos glTF Validator: zero errors and zero warnings. All images and buffers are embedded; no texture path dependencies. Informational notices concern unused UV/tangent attributes and a non-power-of-two source image.
+Physical iPhone Quick Look, Samsung/Android floor detection, room lighting, scale perception and tracking require a real-device acceptance test. Browser simulation cannot prove those hardware behaviors. Models are artist-made reconstructions; no scan accuracy or depth occlusion is claimed. The 5 m waterfall is a bespoke concept. Bars/ingredients are enlarged display models.
 
-| Model | Size | Errors | Warnings |
-|---|---:|---:|---:|
-| enchi_live_edge_table.glb | 4.39 MB | 0 | 0 |
-| fairafric_booth.glb | 1.11 MB | 0 | 0 |
-| medtropic_showroom.glb | 5.5 MB | 0 | 0 |
+## Phone acceptance check
 
-- Geometry: table 20,960 triangles; display 11,196; shared scene 32,156.
-- 19 browser checks pass in installed headless Chrome with a simulated camera: camera-first startup, rear-camera preference, no microphone request, playback, 390×844 / 360×640 / 844×390 layouts, help controls, each logo's exact website link, each 3D mesh's direct link, drag-versus-tap separation, fixed-scale AR configuration, gesture-preserving AR handoff and camera release, placement/tracking feedback, camera return, permission denial and retry, missing-model recovery, and no unexpected browser errors/failed requests.
-- AR lifecycle tests dispatch simulated events. They prove application behavior, not physical tracking.
-- QR PNG and the QR rendered on the card both decode exactly to https://frzreik.github.io/medtropic-ar-realistic/ .
-- Business card: two sides, 85×55 mm trim, 3 mm bleed in print PDF; digital PDF has trim size only. Name, role and phone checked. PDFs rendered and visually reviewed.
-
-## Changes
-
-Both objects share a ground plane with floor placement and fixed scale. Camera-direction placement is provided by the platform's AR viewer after the required user tap. Real scanned wood colour, normal and roughness maps replace baked-in photographic glare. Two steel table frames, fastening plates/bolts, rounded edges and soft contact shadows add physical detail. The fairafric cardboard display has been enlarged 60%; the lower steel shelving is removed. Camera preview remains explicitly labeled until tracked AR is started.
-
-## Real-device checks still required
-
-Physical camera permissions, floor detection, scale perception, tracking stability, lighting estimation, occlusion expectations, and thermal/performance behavior on an actual iPhone and Android phone have not been tested. Quick Look/Scene Viewer launch paths are configured; physical native launches are not certified. Native AR viewers do not preserve HTML logo links; return to the page to open brand websites. WebXR keeps page hotspots. No depth occlusion is implemented.
-
-Dimensions are estimates from photos, not measurements. The enlarged display is a requested design adaptation. A browser cannot silently enter immersive AR from a QR scan: one tap plus device permissions is required.
-
-## Quick phone acceptance test
-
-1. Scan the new QR in Safari or Chrome and allow the camera.
-2. Tap Place on floor · full size, point toward a well-lit, textured floor, and move slowly until tracking places the objects.
-3. Walk around the objects, check floor contact, return to the page, and test both logos and object taps.
-4. Deny camera access once, retry, and test returning from each brand site.
+1. Scan the QR with the phone camera and open the HTTPS page; allow rear-camera access.
+2. Confirm white logos and a clear gap between the table and stand. Tap the table, swipe vertically on the model, then open AR and check floor contact/resizing.
+3. Return to the page, tap the chocolate stand and swipe bars. Launch the selected bar in AR. Samsung Internet should hand off to Scene Viewer when installed and supported.
+4. Check brand links, camera-denial recovery and an AR exit/return. If the scan opens an embedded browser, use the Help link to open Chrome.

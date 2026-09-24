@@ -1,631 +1,108 @@
-[
-  {
-    "file": "enchi_live_edge_table.glb",
-    "bytes": 4602628,
-    "uri": "enchi_live_edge_table.glb",
-    "mimeType": "model/gltf-binary",
-    "validatorVersion": "2.0.0-dev.3.10",
-    "validatedAt": "2026-09-23T15:36:48.938Z",
-    "issues": {
-      "numErrors": 0,
-      "numWarnings": 0,
-      "numInfos": 6,
-      "numHints": 0,
-      "messages": [
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/2/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/2/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/3/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/3/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/4/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/4/attributes/TEXCOORD_0"
-        }
-      ],
-      "truncated": false
+{
+  "validator": "Khronos glTF Validator",
+  "models": 20,
+  "errors": 0,
+  "warnings": 0,
+  "files": [
+    {
+      "file": "enchi_albizia_waterfall.glb",
+      "errors": 0,
+      "warnings": 0
     },
-    "info": {
-      "version": "2.0",
-      "generator": "Khronos glTF Blender I/O v5.2.40",
-      "extensionsUsed": [
-        "KHR_materials_specular"
-      ],
-      "resources": [
-        {
-          "pointer": "/buffers/0",
-          "mimeType": "application/gltf-buffer",
-          "storage": "glb",
-          "byteLength": 4595768
-        },
-        {
-          "pointer": "/images/0",
-          "mimeType": "image/jpeg",
-          "storage": "buffer-view",
-          "image": {
-            "width": 1024,
-            "height": 1024,
-            "format": "rgb",
-            "bits": 8
-          }
-        },
-        {
-          "pointer": "/images/1",
-          "mimeType": "image/jpeg",
-          "storage": "buffer-view",
-          "image": {
-            "width": 2048,
-            "height": 2048,
-            "format": "rgb",
-            "bits": 8
-          }
-        },
-        {
-          "pointer": "/images/2",
-          "mimeType": "image/png",
-          "storage": "buffer-view",
-          "image": {
-            "width": 1024,
-            "height": 1024,
-            "format": "rgb",
-            "primaries": "srgb",
-            "transfer": "srgb",
-            "bits": 8
-          }
-        }
-      ],
-      "animationCount": 0,
-      "materialCount": 5,
-      "hasMorphTargets": false,
-      "hasSkins": false,
-      "hasTextures": true,
-      "hasDefaultScene": true,
-      "drawCallCount": 5,
-      "totalVertexCount": 11628,
-      "totalTriangleCount": 20960,
-      "maxUVs": 1,
-      "maxInfluences": 0,
-      "maxAttributes": 4
-    }
-  },
-  {
-    "file": "fairafric_booth.glb",
-    "bytes": 1167900,
-    "uri": "fairafric_booth.glb",
-    "mimeType": "model/gltf-binary",
-    "validatorVersion": "2.0.0-dev.3.10",
-    "validatedAt": "2026-09-23T15:36:48.955Z",
-    "issues": {
-      "numErrors": 0,
-      "numWarnings": 0,
-      "numInfos": 28,
-      "numHints": 0,
-      "messages": [
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/0/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/0/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/1/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/2/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/3/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/3/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/4/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/4/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/5/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/5/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/6/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/6/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/7/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/7/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/8/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/8/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/9/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/9/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/10/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/10/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/11/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/11/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/12/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/12/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/13/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/13/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "IMAGE_NPOT_DIMENSIONS",
-          "message": "Image has non-power-of-two dimensions: 1152x1536.",
-          "severity": 2,
-          "pointer": "/images/0"
-        }
-      ],
-      "truncated": false
+    {
+      "file": "enchi_bespoke_waterfall_5m.glb",
+      "errors": 0,
+      "warnings": 0
     },
-    "info": {
-      "version": "2.0",
-      "generator": "Khronos glTF Blender I/O v5.2.40",
-      "resources": [
-        {
-          "pointer": "/buffers/0",
-          "mimeType": "application/gltf-buffer",
-          "storage": "glb",
-          "byteLength": 1151696
-        },
-        {
-          "pointer": "/images/0",
-          "mimeType": "image/jpeg",
-          "storage": "buffer-view",
-          "image": {
-            "width": 1152,
-            "height": 1536,
-            "format": "rgb",
-            "bits": 8
-          }
-        }
-      ],
-      "animationCount": 0,
-      "materialCount": 14,
-      "hasMorphTargets": false,
-      "hasSkins": false,
-      "hasTextures": true,
-      "hasDefaultScene": true,
-      "drawCallCount": 14,
-      "totalVertexCount": 8095,
-      "totalTriangleCount": 11196,
-      "maxUVs": 1,
-      "maxInfluences": 0,
-      "maxAttributes": 4
-    }
-  },
-  {
-    "file": "medtropic_showroom.glb",
-    "bytes": 5770336,
-    "uri": "medtropic_showroom.glb",
-    "mimeType": "model/gltf-binary",
-    "validatorVersion": "2.0.0-dev.3.10",
-    "validatedAt": "2026-09-23T15:36:48.978Z",
-    "issues": {
-      "numErrors": 0,
-      "numWarnings": 0,
-      "numInfos": 34,
-      "numHints": 0,
-      "messages": [
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/2/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/2/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/3/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/3/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/4/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/0/primitives/4/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/0/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/0/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/1/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/1/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/2/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/3/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/3/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/4/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/4/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/5/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/5/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/6/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/6/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/7/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/7/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/8/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/8/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/9/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/9/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/10/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/10/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/11/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/11/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/12/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/12/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "UNUSED_MESH_TANGENT",
-          "message": "Tangents are not used because the material has no normal texture.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/13/attributes/TANGENT"
-        },
-        {
-          "code": "UNUSED_OBJECT",
-          "message": "This object may be unused.",
-          "severity": 2,
-          "pointer": "/meshes/1/primitives/13/attributes/TEXCOORD_0"
-        },
-        {
-          "code": "IMAGE_NPOT_DIMENSIONS",
-          "message": "Image has non-power-of-two dimensions: 1152x1536.",
-          "severity": 2,
-          "pointer": "/images/3"
-        }
-      ],
-      "truncated": false
+    {
+      "file": "enchi_live_edge_low.glb",
+      "errors": 0,
+      "warnings": 0
     },
-    "info": {
-      "version": "2.0",
-      "generator": "Khronos glTF Blender I/O v5.2.40",
-      "extensionsUsed": [
-        "KHR_materials_specular"
-      ],
-      "resources": [
-        {
-          "pointer": "/buffers/0",
-          "mimeType": "application/gltf-buffer",
-          "storage": "glb",
-          "byteLength": 5747464
-        },
-        {
-          "pointer": "/images/0",
-          "mimeType": "image/jpeg",
-          "storage": "buffer-view",
-          "image": {
-            "width": 1024,
-            "height": 1024,
-            "format": "rgb",
-            "bits": 8
-          }
-        },
-        {
-          "pointer": "/images/1",
-          "mimeType": "image/jpeg",
-          "storage": "buffer-view",
-          "image": {
-            "width": 2048,
-            "height": 2048,
-            "format": "rgb",
-            "bits": 8
-          }
-        },
-        {
-          "pointer": "/images/2",
-          "mimeType": "image/png",
-          "storage": "buffer-view",
-          "image": {
-            "width": 1024,
-            "height": 1024,
-            "format": "rgb",
-            "primaries": "srgb",
-            "transfer": "srgb",
-            "bits": 8
-          }
-        },
-        {
-          "pointer": "/images/3",
-          "mimeType": "image/jpeg",
-          "storage": "buffer-view",
-          "image": {
-            "width": 1152,
-            "height": 1536,
-            "format": "rgb",
-            "bits": 8
-          }
-        }
-      ],
-      "animationCount": 0,
-      "materialCount": 19,
-      "hasMorphTargets": false,
-      "hasSkins": false,
-      "hasTextures": true,
-      "hasDefaultScene": true,
-      "drawCallCount": 19,
-      "totalVertexCount": 19723,
-      "totalTriangleCount": 32156,
-      "maxUVs": 1,
-      "maxInfluences": 0,
-      "maxAttributes": 4
+    {
+      "file": "enchi_live_edge_table.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "enchi_sapele_dining.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_00.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_01.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_02.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_03.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_04.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_05.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_06.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_07.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_08.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_09.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_10.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_11.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_bar_12.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "fairafric_booth.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "medtropic_showroom.glb",
+      "errors": 0,
+      "warnings": 0
     }
-  }
-]
+  ]
+}
